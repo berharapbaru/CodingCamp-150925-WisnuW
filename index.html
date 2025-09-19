@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Tugas</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Daftar Tugas</h1>
+
+      <form id="todo-form">
+        <div class="input-group">
+          <input type="text" id="todo-input" placeholder="Mau ngapain??" />
+          <input type="date" id="date-input" />
+          <button type="submit" id="add-btn">Tambahkan</button>
+        </div>
+        <div id="error-message" class="error-msg"></div>
+      </form>
+
+      <div class="controls">
+        <div class="filter-group">
+          <button id="filter-all-btn" class="filter-btn active">Semua</button>
+          <button id="filter-pending-btn" class="filter-btn">
+            Belum Selesai
+          </button>
+          <button id="filter-completed-btn" class="filter-btn">Selesai</button>
+        </div>
+        <button id="delete-all-btn">Hapus Semua</button>
+      </div>
+
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
